@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Никита Иванов](https://up.htmlacademy.ru/htmlcss/36/user/2070551).
-* Наставник: `Неизвестно`.
+- Студент: [Никита Иванов](https://up.htmlacademy.ru/htmlcss/36/user/2070551).
+- Наставник: [Амина Омарова](https://htmlacademy.ru/profile/ami).
 
 ---
 
