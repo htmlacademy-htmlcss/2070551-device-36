@@ -7,34 +7,36 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <a class="page-header-link" href="#">
-        <img class="page-header-logo" src="" alt="Логотип интернет-магазина «Device»">
-      </a>
-      <div class="search-form-container">
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="search">
-            <input class="search-input" type="search" name="search-field" placeholder="Поиск по сайту">
-          </label>
-          <button class="button seacrh-button" type="submit">Найти</button>
-        </form>
-        <a class="navigation-link" href="#">Войти</a>
-      </div>
-      <div class="user-link-container">
-        <a class="user-link" href="#">Сравнить</a>
-        <a class="user-link" href="#">Корзина</a>
-      </div>
-      <div class="catalog-container">
-        <button class="button button-navigation">Каталог товаров</button>
-        <button class="navigation-catalog-button">
-          <span class="visually-hidden">Посмотреть каталог товаров</span>
-        </button>
-      </div>
-      <nav class="navigation">
-        <button class="button button-navigation">Доставка</button>
-        <button class="button button-navigation">Гарантия</button>
-        <button class="button button-navigation">Контакты</button>
-      </nav>
+    <header>
+      <section class="page-header">
+        <a class="page-header-link" href="#">
+          <img class="page-header-logo" src="" alt="Логотип интернет-магазина «Device»">
+        </a>
+        <div class="search-form-container">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="search">
+              <input class="search-input" type="search" name="search-field" placeholder="Поиск по сайту">
+            </label>
+            <button class="button search-button" type="submit">Найти</button>
+          </form>
+          <a class="user-link user-login" href="#">Войти</a>
+        </div>
+        <div class="user-link-container">
+          <a class="user-link user-compare" href="#">Сравнить</a>
+          <a class="user-link user-basket" href="#">Корзина</a>
+        </div>
+        <div class="catalog-container">
+          <button class="button catalog-button">
+            <span>Каталог товаров</span>
+            <img class="catalog-icon" src="#" alt="Иконка каталога товаров">
+          </button>
+        </div>
+        <nav class="navigation">
+          <a class="navigation-link" href="#">Доставка</a>
+          <a class="navigation-link" href="#">Гарантия</a>
+          <a class="navigation-link" href="#">Контакты</a>
+        </nav>
+      </section>
     </header>
 
     <main class="main-index">
