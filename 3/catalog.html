@@ -7,8 +7,8 @@
     <base href="https://htmlacademy-htmlcss.github.io/2070551-device-36/3/">
 </head>
 
-  <header>
-    <section class="page-header">
+  <header class="page-header">
+    <div class="container">
       <a class="page-header-link" href="#">
         <img class="page-header-logo" src="" alt="Логотип интернет-магазина «Device»">
       </a>
@@ -26,36 +26,31 @@
         <a class="user-link user-basket" href="#">Корзина</a>
       </div>
       <div class="catalog-container">
-        <button class="button catalog-button">
-          <span>Каталог товаров</span>
-          <img class="catalog-icon" src="#" alt="Иконка каталога товаров">
-        </button>
+        <button class="button catalog-button">Каталог товаров</button>
       </div>
       <nav class="navigation">
         <a class="navigation-link" href="#">Доставка</a>
         <a class="navigation-link" href="#">Гарантия</a>
         <a class="navigation-link" href="#">Контакты</a>
       </nav>
-    </section>
+    </div>
   </header>
 
   <main class="main-inner">
-    <section class="breadcrumbs">
+    <section class="catalog-title">
       <div class="container">
-        <header class="inner-header">
-          <h1 class="inner-header-title">Моноподы для селфи</h1>
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">Каталог товаров</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Моноподы для селфи</a>
-            </li>
-          </ul>
-        </header>
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -121,7 +116,7 @@
               </ul>
             </fieldset>
 
-            <button class="button" type="submit">Показать</button>
+            <button class="button button-primary" type="submit">Показать</button>
           </form>
         </div>
 
@@ -174,7 +169,7 @@
               <span class="product-card-price">1 500 ₽</span>
             </section>
 
-            <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+            <button class="button button-secondary" type="button">Загрузить ещё</button>
 
             <section class="pagination-menu">
               <ul class="pagination">
@@ -224,17 +219,11 @@
       <section class="footer-nav-socials">
         <div class="footer-navigation">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="footer-advantages-list">
-            <li class="footer-advantages-item">
-              <button class="button button-footer-category">Доставка</button>
-            </li>
-            <li class="footer-advantages-item">
-              <button class="button button-footer-category">Гарантия</button>
-            </li>
-            <li class="footer-advantages-item">
-              <button class="button button-footer-category">Контакты</button>
-            </li>
-          </ul>
+          <nav class="navigation">
+            <a class="navigation-link" href="#">Доставка</a>
+            <a class="navigation-link" href="#">Гарантия</a>
+            <a class="navigation-link" href="#">Контакты</a>
+          </nav>
         </div>
 
         <div class="footer-social">
@@ -247,6 +236,7 @@
           <div class="youtube">
             <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютьюб</span>
+            </a>
           </div>
           <div class="twitter">
             <a class="social-button" href="https://twitter.com/htmlacademy_ru">

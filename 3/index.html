@@ -8,8 +8,8 @@
 </head>
 
   <body>
-    <header>
-      <section class="page-header">
+    <header class="page-header">
+      <div class="container">
         <a class="page-header-link" href="#">
           <img class="page-header-logo" src="" alt="Логотип интернет-магазина «Device»">
         </a>
@@ -27,22 +27,19 @@
           <a class="user-link user-basket" href="#">Корзина</a>
         </div>
         <div class="catalog-container">
-          <button class="button catalog-button">
-            <span>Каталог товаров</span>
-            <img class="catalog-icon" src="#" alt="Иконка каталога товаров">
-          </button>
+          <button class="button catalog-button">Каталог товаров</button>
         </div>
         <nav class="navigation">
           <a class="navigation-link" href="#">Доставка</a>
           <a class="navigation-link" href="#">Гарантия</a>
           <a class="navigation-link" href="#">Контакты</a>
         </nav>
-      </section>
+      </div>
     </header>
 
     <main class="main-index">
+      <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
       <section class="slider">
-        <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
         <div class="slider-container">
           <h2 class="visually-hidden">Популярные товары</h2>
           <div class="slide-1">
@@ -53,7 +50,7 @@
                 замаскированным
                 под
                 стандартную камеру.</p>
-              <button class="button button-all" type="button">Подробнее</button>
+              <button class="button button-primary" type="button">Подробнее</button>
               <dl class="table-info">
                 <dt class="table-title">Дальность полёта</dt>
                 <dd class="table-description">800 М</dd>
@@ -70,7 +67,7 @@
               <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
                 соблюдать
                 диету.</p>
-              <button class="button button-all" type="button">Подробнее</button>
+              <button class="button button-primary" type="button">Подробнее</button>
               <dl class="table-info">
                 <dt class="table-title">Без подзарядки</dt>
                 <dd class="table-description">48 часов</dd>
@@ -85,7 +82,7 @@
               <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
                 метров
                 длиной и весом всего 5 кг.</p>
-              <button class="button button-all" type="button">Подробнее</button>
+              <button class="button button-primary" type="button">Подробнее</button>
               <dl class="table-info">
                 <dt class="table-title">Длина палки</dt>
                 <dd class="table-description">8,5 М</dd>
@@ -104,10 +101,10 @@
             <span class="visually-hidden">Следующий товар</span>
           </button>
 
-          <div class="pagination-conyeiner">
+          <div class="pagination-conteiner">
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
                   <span class="visually-hidden">1 Слайд</span>
                 </button>
               </li>
@@ -117,7 +114,7 @@
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <button class="slider-pagination-button" type="button">
                   <span class="visually-hidden">3 Слайд</span>
                 </button>
               </li>
@@ -174,26 +171,12 @@
             <img class="tab-description-img" src="" alt="Доставим товар к вашему подъезду">
           </div>
 
-          <div class="tab-menu">
-            <h2 class="visually-hidden">Наши преимущества</h2>
-            <button class="advantages-button" type="button">Доставка</button>
-            <button class="advantages-button advantages-button-current" type="button">Гарантия</button>
-            <button class="advantages-button" type="button">Кредит</button>
-          </div>
-
           <div class="tab-description">
             <h3 class="tab-description-title">Гарантия</h3>
             <p class="tab-text">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
             <img class="tab-description-img" src="" alt="Гарантируем замену сорманного товара на новый">
-          </div>
-
-          <div class="tab-description">
-            <h2 class="visually-hidden">Наши преимущества</h2>
-            <button class="advantages-button" type="button">Доставка</button>
-            <button class="advantages-button" type="button">Гарантия</button>
-            <button class="advantages-button  advantages-button-current" type="button">Кредит</button>
           </div>
 
           <div class="tab-description">
@@ -215,9 +198,6 @@
             </div>
             <div class="text-block">
               <p class="unique-advantage-text">Доставим редкий товар под заказ</p>
-            </div>
-            <div class="icon-block">
-              <span class="visually-hidden">i</span>
             </div>
           </button>
         </div>
@@ -243,7 +223,7 @@
                 <b class="about-us-transport">ТоксБерри</b>
               </li>
             </ul>
-            <button class="button button-all" type="button">Подробнее о нас</button>
+            <button class="button button-primary" type="button">Подробнее о нас</button>
           </div>
 
           <div class="contacts">
@@ -260,7 +240,7 @@
               <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <button class="button button-all" type="button">Напишите нам</button>
+            <button class="button button-primary" type="button">Напишите нам</button>
           </div>
         </div>
       </section>
@@ -274,7 +254,7 @@
             <label for="newsletter-email">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
               required>
-            <button class="button newsletter-button" type="submit">Подписаться</button>
+            <button class="button button-extra" type="submit">Подписаться</button>
           </form>
           <span class="newsletter-remark">Это бесплатно</span>
         </div>
@@ -294,17 +274,11 @@
         <section class="footer-nav-socials">
           <div class="footer-navigation">
             <h2 class="visually-hidden">Наши преимущества</h2>
-            <ul class="footer-advantages-list">
-              <li class="footer-advantages-item">
-                <button class="button button-footer-category">Доставка</button>
-              </li>
-              <li class="footer-advantages-item">
-                <button class="button button-footer-category">Гарантия</button>
-              </li>
-              <li class="footer-advantages-item">
-                <button class="button button-footer-category">Контакты</button>
-              </li>
-            </ul>
+            <nav class="navigation">
+              <a class="navigation-link" href="#">Доставка</a>
+              <a class="navigation-link" href="#">Гарантия</a>
+              <a class="navigation-link" href="#">Контакты</a>
+            </nav>
           </div>
 
           <div class="footer-social">
@@ -317,6 +291,7 @@
             <div class="youtube">
               <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютьюб</span>
+              </a>
             </div>
             <div class="twitter">
               <a class="social-button" href="https://twitter.com/htmlacademy_ru">
