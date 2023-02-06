@@ -21,3 +21,9 @@
   font-weight: 800;
   font-display: swap;
 }
+
+body {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 30px;
+}
