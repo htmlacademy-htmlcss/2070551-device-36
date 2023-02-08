@@ -94,9 +94,23 @@ color: #000000;
   color: #FFE17F;
 }
 
+.advantages {
+  background: #F0F0F0;
+}
+
 .tab-description-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+}
+
+.unique-advantage-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background: #F0F0F0;
 }
