@@ -81,3 +81,22 @@ color: #000000;
   color: #000000;
   text-decoration: none;
 }
+
+.advantages-button {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages-button-current {
+  color: #FFE17F;
+}
+
+.tab-description-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
