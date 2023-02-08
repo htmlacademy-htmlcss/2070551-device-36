@@ -126,4 +126,27 @@ color: #000000;
   font-family: "Rubik", sans-serif;
   line-height: 20px;
   color: #000000;
+  font-weight: 700;
+}
+
+.contacts-title  {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.contacts-subtitle {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-phone {
+  text-decoration-line: underline;
+  color: #444444;
 }
