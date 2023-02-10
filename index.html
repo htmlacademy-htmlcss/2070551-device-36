@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Девайс</title>
   </head>
 
@@ -27,7 +28,7 @@
           <a class="user-link user-basket" href="#">Корзина</a>
         </div>
         <div class="catalog-container">
-          <button class="button catalog-button">Каталог товаров</button>
+          <a class="navigation-link navigation-catalog" href="catalog.html">Каталог товаров</a>
         </div>
         <nav class="navigation">
           <a class="navigation-link" href="#">Доставка</a>
@@ -46,7 +47,7 @@
             <img class="slider-image" src="images/slider-img/slider-1.png" width="560" height="560"
               alt="Фото квадрокоптера">
             <div class="slider-info-container">
-              <h3 class="slider-info-title">Порхает как бабочка, жалит как пчела!</h3>
+              <h3 class="main-title">Порхает как бабочка, жалит как пчела!</h3>
               <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным
                 под
@@ -65,7 +66,7 @@
             <img class="slider-image" src="images/slider-img/slider-2.png" width="560" height="560"
               alt="Фото фитнес-браслета">
             <div class="slider-info-container">
-              <h3 class="slider-info-title">Худеем правильно!</h3>
+              <h3 class="main-title">Худеем правильно!</h3>
               <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
                 соблюдать
                 диету.</p>
@@ -81,7 +82,7 @@
             <img class="slider-image" src="images/slider-img/slider-3.png" width="560" height="560"
               alt="Фото палки для селфи">
             <div class="slider-info-container">
-              <h3 class="slider-info-title">Делай селфи, как Бен Стиллер!</h3>
+              <h3 class="main-title">Делай селфи, как Бен Стиллер!</h3>
               <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
                 метров
                 длиной и весом всего 5 кг.</p>
@@ -161,21 +162,21 @@
             <button class="advantages-button" type="button">Кредит</button>
           </div>
           <div class="tab-description">
-            <h3 class="tab-description-title">Доставка</h3>
+            <h3 class="main-title">Доставка</h3>
             <p class="tab-text">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
 
           <div class="tab-description">
-            <h3 class="tab-description-title">Гарантия</h3>
+            <h3 class="main-title">Гарантия</h3>
             <p class="tab-text">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
           </div>
 
           <div class="tab-description">
-            <h3 class="tab-description-title">Кредит</h3>
+            <h3 class="main-title">Кредит</h3>
             <p class="tab-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
               наиболее
               выгодные условия кредита. Выгодные для банка, разумеется.</p>
@@ -199,7 +200,7 @@
       <section class="company-info">
         <div class="container">
           <div class="about-us">
-            <h2 class="about-us-title">О нас</h2>
+            <h2 class="main-title">О нас</h2>
             <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
             </p>
             <p class="about-us-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
@@ -220,11 +221,11 @@
           </div>
 
           <div class="contacts">
-            <h2 class="contacts-title">Контакты</h2>
+            <h2 class="main-title">Контакты</h2>
             <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.
               Заодно сможете проверить работоспособность покупки.</p>
             <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
-            <address class="cotacts-address">
+            <address class="contacts-address">
               <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
               <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </address>
@@ -240,7 +241,7 @@
 
       <section class="newsletter">
         <div class="container">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+          <h2 class="main-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -260,15 +261,15 @@
           <h2 class="visually-hidden">Адрес</h2>
           <img class="footer-contacts-logo" src="images/logo-footer.svg" width="145" height="36"
             alt="Логотип интернет-магазина «Device»">
-          <address class="cotacts-address">
-            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <address class="contacts-address">
+            <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
         </section>
 
         <section class="footer-nav-socials">
           <div class="footer-navigation">
             <h2 class="visually-hidden">Наши преимущества</h2>
-            <nav class="navigation">
+            <nav class="navigation footer-navigation">
               <a class="navigation-link" href="#">Доставка</a>
               <a class="navigation-link" href="#">Гарантия</a>
               <a class="navigation-link" href="#">Контакты</a>
@@ -297,8 +298,8 @@
 
         <section class="footer-connection">
           <h2 class="visually-hidden">Позвоните нам</h2>
-          <address class="cotacts-address">
-            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <address class="footer-contacts-address">
+            <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
             <img class="about-text" src="images/html-academy-icon.svg" width="115" height="33" alt="html-academy-logo">
