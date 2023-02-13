@@ -100,6 +100,15 @@ body {
   margin: 0 auto;
 }
 
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-info-container {
+  width: 560px;
+}
+
 .main-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
