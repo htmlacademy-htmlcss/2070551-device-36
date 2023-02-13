@@ -39,9 +39,24 @@ body {
   background: #FFFFFF;
 }
 
+.header-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .page-header {
   background: #FFE17F;
   color: #000000;
+}
+
+.search-form-container {
+  width: 650px;
+}
+
+.user-link-container {
+  max-width: 350px;
+  margin-left: auto;
 }
 
 .search-input {
@@ -55,6 +70,15 @@ body {
   text-align: center;
   text-decoration: none;
   color: #000000;
+}
+
+.catalog-container {
+  max-width: 300px;
+}
+
+.navigation {
+  width: 471px;
+  margin-left: auto;
 }
 
 .navigation-link {
