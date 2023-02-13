@@ -39,7 +39,7 @@ body {
   background: #FFFFFF;
 }
 
-.header-container {
+.container {
   display: flex;
   width: 1160px;
   margin: 0 auto;
@@ -129,11 +129,20 @@ body {
 }
 
 .product-category-link {
+  width: 160px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+}
+
+.tab-menu {
+  width: 280px;
+}
+
+.tab-description {
+  width: 694px;
 }
 
 .advantages-button {
@@ -150,6 +159,7 @@ body {
 }
 
 .advantages {
+  width: 100%;
   background: #F0F0F0;
 }
 
@@ -162,6 +172,20 @@ body {
   text-transform: uppercase;
   color: #000000;
   background: #F0F0F0;
+}
+
+.company-info-container {
+  display: flex;
+  width: 1160px;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 520px;
+}
+
+.contacts {
+  width: 520px;
 }
 
 .about-us-item {
@@ -192,6 +216,16 @@ body {
 
 .page-footer {
   background: #444444;
+}
+
+.footer-contacts {
+  width: 240px;
+  margin-right: 119px;
+}
+
+.footer-connection {
+  width: 175px;
+  margn-left: auto;
 }
 
 .footer-address-text {
