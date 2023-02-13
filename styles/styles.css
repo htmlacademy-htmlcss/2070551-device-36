@@ -211,6 +211,7 @@ body {
 }
 
 .newsletter {
+  width: 100%;
   background: #F0F0F0;
 }
 
@@ -297,4 +298,24 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: right;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.filter-container {
+  width: 200px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.catalog-right-column {
+  width: 840px;
+}
+
+breadcrumbs-container {
+  display: flex;
+  width: 1079px;
+  margin: 0 auto;
 }
