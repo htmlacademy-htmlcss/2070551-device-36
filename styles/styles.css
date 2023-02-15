@@ -22,19 +22,41 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
   background: #FFFFFF;
-  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .page-header {
   background: #FFE17F;
   color: #000000;
+}
+
+.search-form-container {
+  width: 650px;
+}
+
+.user-link-container {
+  max-width: 350px;
+  margin-left: auto;
 }
 
 .search-input {
@@ -50,6 +72,15 @@ body {
   color: #000000;
 }
 
+.catalog-container {
+  max-width: 300px;
+}
+
+.navigation {
+  width: 471px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -58,6 +89,24 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-info-container {
+  width: 560px;
 }
 
 .main-title {
@@ -80,11 +129,20 @@ body {
 }
 
 .product-category-link {
+  width: 160px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+}
+
+.tab-menu {
+  width: 280px;
+}
+
+.tab-description {
+  width: 694px;
 }
 
 .advantages-button {
@@ -101,6 +159,7 @@ body {
 }
 
 .advantages {
+  width: 100%;
   background: #F0F0F0;
 }
 
@@ -113,6 +172,20 @@ body {
   text-transform: uppercase;
   color: #000000;
   background: #F0F0F0;
+}
+
+.company-info-container {
+  display: flex;
+  width: 1160px;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 520px;
+}
+
+.contacts {
+  width: 520px;
 }
 
 .about-us-item {
@@ -138,11 +211,22 @@ body {
 }
 
 .newsletter {
+  width: 100%;
   background: #F0F0F0;
 }
 
 .page-footer {
   background: #444444;
+}
+
+.footer-contacts {
+  width: 240px;
+  margin-right: 119px;
+}
+
+.footer-connection {
+  width: 175px;
+  margin-left: auto;
 }
 
 .footer-address-text {
@@ -214,4 +298,24 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: right;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.filter-container {
+  width: 200px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.catalog-right-column {
+  width: 840px;
+}
+
+breadcrumbs-container {
+  display: flex;
+  width: 1079px;
+  margin: 0 auto;
 }
