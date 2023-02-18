@@ -62,12 +62,24 @@ body {
 }
 
 .search-form-container {
+  display: flex;
+  flex-wrap: wrap;
   width: 650px;
 }
 
+.user-login {
+  margin-left: 26px;
+}
+
 .user-link-container {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 350px;
   margin-left: auto;
+}
+
+.user-link-container .user-link:not(:last-child) {
+  margin-right: 36px;
 }
 
 .search-input {
@@ -75,6 +87,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  width: 359px;
+  height: 40px;
 }
 
 .user-link {
@@ -88,7 +102,7 @@ body {
 }
 
 .navigation {
-  width: 471px;
+  display: flex;
   margin-left: auto;
 }
 
@@ -100,6 +114,10 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.navigation .navigation-link:not(:last-child) {
+  margin-right: 45px;
 }
 
 .main-container {
