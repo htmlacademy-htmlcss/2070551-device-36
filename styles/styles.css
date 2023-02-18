@@ -127,6 +127,7 @@ body {
 .slider {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .slider-info-container {
@@ -152,6 +153,10 @@ body {
   color: #000000;
 }
 
+.product-category {
+  margin-bottom: 70px;
+}
+
 .product-category-link {
   width: 160px;
   font-family: "Raleway", sans-serif;
@@ -161,12 +166,30 @@ body {
   text-decoration: none;
 }
 
+.product-category-link:not(:last-child) {
+  margin-right: 40px;
+}
+
+.advantages-title {
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
 .tab-menu {
+  display: flex;
+  flex-direction: column;
   width: 280px;
+  margin: 64px 0;
+  justify-content: center;
+}
+
+.tab-menu button:not(:last-child) {
+  margin-bottom: 35px;
 }
 
 .tab-description {
   width: 694px;
+  margin: 73px 63px;
 }
 
 .advantages-button {
