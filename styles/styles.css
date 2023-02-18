@@ -106,11 +106,6 @@ body {
   flex-grow: 1;
 }
 
-.page-container {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .slider {
   display: flex;
   justify-content: space-between;
@@ -188,6 +183,7 @@ body {
 .company-info-container {
   display: flex;
   width: 1160px;
+  margin: 0 auto;
   justify-content: space-between;
 }
 
