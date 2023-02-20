@@ -221,6 +221,15 @@ body {
   background: #F0F0F0;
 }
 
+.unique-advantage .container {
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.company-info .company-info-container {
+  margin-top: 70px;
+}
+
 .company-info-container {
   display: flex;
   width: 1160px;
@@ -261,6 +270,7 @@ body {
 .newsletter {
   width: 100%;
   background: #F0F0F0;
+  margin-top: 70px;
 }
 
 .page-footer {
@@ -281,6 +291,22 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-social:nth-child(3n) {
+  margin-right: 0;
+}
+
+.social-button {
+  width: 40px;
+  height: 40px;
 }
 
 .footer-navigation .navigation-link {
