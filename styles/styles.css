@@ -61,6 +61,10 @@ body {
   color: #000000;
 }
 
+.page-header .container {
+  padding: 20px 60px;
+}
+
 .search-form-container {
   display: flex;
   flex-wrap: wrap;
@@ -329,6 +333,7 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: #000000;
+  margin-right: 36px;
 }
 
 .catalog-products-title {
@@ -360,6 +365,11 @@ body {
   color: #000000;
 }
 
+.product-list {
+  background-color: #FFFFFF;
+  padding: 70px 40px 70px;
+}
+
 .product-card-link {
   text-decoration: none;
   font-weight: 700;
@@ -376,6 +386,7 @@ body {
 
 .catalog-products {
   display: flex;
+  background-color: #F0F0F0;
 }
 
 .filter-container {
@@ -388,8 +399,65 @@ body {
   width: 840px;
 }
 
-breadcrumbs-container {
+.catalog-title {
   display: flex;
   width: 1079px;
   margin: 0 auto;
+}
+
+.breadcrumbs-container {
+  margin-bottom: 35px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sorting-menu-container {
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting-menu-button {
+  width: 30px;
+  height: 30px;
+}
+
+.sorting-button-container {
+  display: flex;
+}
+
+.button-secondary {
+  padding: 18px 39px;
+  margin: 44px 40px;
+}
+
+.pagination-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: #F0F0F0;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item {
+  width: 40px;
+  height: 40px;
+}
+
+.pagination-link {
+  text-decoration: none;
+  text-transform: uppercase;
 }
