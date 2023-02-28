@@ -277,6 +277,17 @@ body {
   margin-top: 70px;
 }
 
+.newsletter .container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.newsletter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .page-footer {
   background: #444444;
 }
