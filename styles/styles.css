@@ -359,14 +359,57 @@ body {
 }
 
 .newsletter .container {
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .newsletter-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 64px 0 144px 0;
+}
+
+.email-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.newsletter-text {
+  margin-left: 252px;
+}
+
+.newsletter-title {
+  margin: 0 0 0 0;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.email-input {
+  width: 557px;
+  height: 52px;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  background: none;
+}
+
+.button-extra {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  background: none;
+  min-width: 253px;
+  border: 3px solid #C4C4C4;
+  height: 57px;
 }
 
 .page-footer {
