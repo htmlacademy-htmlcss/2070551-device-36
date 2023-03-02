@@ -350,6 +350,10 @@ body {
   width: 520px;
 }
 
+.about-us-title {
+  margin: 47px 0 48px 0;
+}
+
 .about-us-item {
   font-family: "Rubik", sans-serif;
   line-height: 20px;
