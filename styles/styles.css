@@ -128,9 +128,14 @@ body {
   flex-grow: 1;
 }
 
+.slide {
+  display: flex;
+}
+
 .slider {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   margin-bottom: 70px;
 }
 
