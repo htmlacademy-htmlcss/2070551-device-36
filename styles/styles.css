@@ -311,6 +311,21 @@ body {
   margin-top: 70px;
 }
 
+.unique-advantage-button {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: 1160px;
+  height: 100px;
+  background: #F0F0F0;
+  border: none;
+}
+
 .company-info .company-info-container {
   margin-top: 70px;
 }
