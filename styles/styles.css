@@ -89,14 +89,15 @@ body {
 }
 
 .page-header {
-  background: #FFE17F;
   color: #000000;
 }
 
 .page-header .container {
+  background: #FFE17F;
   display: flex;
   flex-direction: column;
   padding: 0;
+  width: 1040px;
 }
 
 .user-link-row {
@@ -112,7 +113,6 @@ body {
 
 .search-form-container {
   display: flex;
-  width: 650px;
 }
 
 .search-form {
@@ -120,14 +120,14 @@ body {
 }
 
 .user-login {
-  margin-left: 26px;
+  margin-left: 54px;
+  margin-right: 28px;
 }
 
 .user-link-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 350px;
-  margin-left: auto;
 }
 
 .user-link-container .user-link:not(:last-child) {
@@ -149,9 +149,14 @@ body {
 
 .user-link {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   text-decoration: none;
   color: #000000;
+}
+
+.user-exit {
+  opacity: 0.3;
 }
 
 .catalog-container {
@@ -577,7 +582,7 @@ body {
 
 .catalog-title {
   display: flex;
-  width: 1079px;
+  width: 1040px;
   margin: 0 auto;
 }
 
