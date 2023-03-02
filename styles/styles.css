@@ -165,12 +165,14 @@ body {
 
 .navigation-link {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .navigation .navigation-link:not(:last-child) {
@@ -373,11 +375,19 @@ body {
 
 .footer-contacts {
   width: 240px;
-  margin-right: 119px;
+  margin: 62px 119px 77px 0;
+}
+
+.footer-nav-socials {
+  margin: 137px 0 61px 0;
 }
 
 .footer-connection {
+  display: flex;
+  flex-direction: column;
   width: 175px;
+  margin-top: 140px;
+  margin-bottom: 65px;
   margin-left: auto;
 }
 
@@ -409,6 +419,11 @@ body {
 
 .footer-contacts-address {
   font-style: normal;
+  margin-top: 35px;
+}
+
+.htmlacademy-link {
+  margin-left: auto;
 }
 
 .footer-contacts-phone {
