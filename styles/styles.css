@@ -130,6 +130,7 @@ body {
 
 .slide {
   display: flex;
+  align-items: center;
 }
 
 .slider {
@@ -139,8 +140,20 @@ body {
   margin-bottom: 70px;
 }
 
+.slider-title {
+  margin: 0 15px 30px 0;
+}
+
 .slider-info-container {
   width: 560px;
+}
+
+.slider-text {
+  margin-bottom: 50px;
+}
+
+.table-info {
+  margin: 50px 0 0 0;
 }
 
 .main-title {
