@@ -273,11 +273,19 @@ body {
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
+  min-width: 120px;
+  border: none;
+  background: #FFE17F;
+  font-style: normal;
+  font-size: 18px;
+  text-align: start;
+  letter-spacing: 0.2em;
 }
 
 .advantages-button-current {
   color: #FFE17F;
+  width: 280px;
+  background: #000000;
 }
 
 .advantages {
