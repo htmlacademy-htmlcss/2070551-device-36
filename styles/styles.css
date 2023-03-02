@@ -378,6 +378,10 @@ body {
   margin: 62px 119px 77px 0;
 }
 
+.footer-contacts-address {
+  margin-top: 35px;
+}
+
 .footer-nav-socials {
   margin: 137px 0 61px 0;
 }
@@ -417,9 +421,9 @@ body {
   color: #FFFFFF;
 }
 
-.footer-contacts-address {
+.footer-phone {
   font-style: normal;
-  margin-top: 35px;
+  margin-bottom: 63px;
 }
 
 .htmlacademy-link {
