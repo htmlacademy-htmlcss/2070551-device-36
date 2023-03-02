@@ -247,6 +247,11 @@ body {
   margin-right: 40px;
 }
 
+.tab-description-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages-title {
   margin-top: 0;
   margin-bottom: 34px;
