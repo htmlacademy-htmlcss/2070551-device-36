@@ -215,8 +215,33 @@ body {
   margin-bottom: 50px;
 }
 
-.table-info {
-  margin: 50px 0 0 0;
+.table-info-1 {
+  display: grid;
+  grid-template-columns: 141px auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 12px;
+  margin-top: 50px;
+}
+
+.table-info-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 12px;
+  margin-top: 50px;
+}
+
+.table-info-3 {
+  display: grid;
+  grid-template-columns: 100px 80px 128px;
+  grid-column-gap: 40px;
+  grid-row-gap: 12px;
+  margin-top: 50px;
+}
+
+.table-description {
+  grid-row: 1 / 2;
+  margin: 0;
 }
 
 .main-title {
