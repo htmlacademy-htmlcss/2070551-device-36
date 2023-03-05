@@ -387,11 +387,30 @@ body {
   margin: 47px 0 48px 0;
 }
 
+.about-us-list {
+  padding-left: 19px;
+}
+
 .about-us-item {
   font-family: "Rubik", sans-serif;
-  line-height: 20px;
-  color: #000000;
+  font-style: normal;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding-left: 26px;
+  margin-bottom: 19px;
+}
+
+.about-us-item::marker {
+  color: #FFC700;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us button {
+  margin-top: 30px;
 }
 
 .contacts-subtitle {
@@ -407,6 +426,11 @@ body {
 .contacts-phone {
   text-decoration-line: underline;
   color: #444444;
+}
+
+.contacts-schedule {
+  list-style-type: none;
+  padding: 0;
 }
 
 .newsletter {
@@ -672,6 +696,30 @@ body {
 }
 
 .pagination-link {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
+  color: #000000;
+}
+
+.pagination-number {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.pagination-item:not(:first-of-type) {
+  opacity: 0.3;
+}
+
+.pagination-item:first-of-type {
+  opacity: 0.6;
 }
