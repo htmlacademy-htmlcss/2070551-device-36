@@ -64,24 +64,6 @@ body {
   font-weight: 800;
 }
 
-.search-button {
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: normal;
-  width: 160px;
-  height: 40px;
-  margin-left: 0;
-  text-align: center;
-  color: #000000;
-  text-transform: none;
-  border: 2px solid #000000;
-  border-left: 0;
-  border-radius: 0 50px 50px 0;
-}
-
 .container {
   display: flex;
   width: 1160px;
@@ -116,7 +98,41 @@ body {
 }
 
 .search-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 517px;
+  box-sizing: border-box;
+}
+
+.search-input {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  width: 359px;
+  height: 40px;
+  padding: 0 0 0 16px;
+  gap: 16px;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+}
+
+.search-button {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: normal;
+  width: 160px;
+  height: 40px;
+  margin-left: 0;
+  text-align: center;
+  color: #000000;
+  text-transform: none;
+  border: 2px solid #000000;
+  border-left: 0;
+  border-radius: 0 50px 50px 0;
 }
 
 .user-login {
@@ -132,19 +148,6 @@ body {
 
 .user-link-container .user-link:not(:last-child) {
   margin-right: 36px;
-}
-
-.search-input {
-  font-family: "Rubik", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
-  width: 359px;
-  height: 40px;
-  padding: 0 0 0 16px;
-  gap: 16px;
-  border: 2px solid #000000;
-  border-radius: 50px 0 0 50px;
 }
 
 .user-link {
