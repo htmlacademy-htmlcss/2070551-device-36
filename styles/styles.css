@@ -608,6 +608,19 @@ body {
   padding: 70px 40px 70px;
 }
 
+.product-list button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 39px;
+  width: 760px;
+  height: 55px;
+  border: 3px solid #E5E5E5;
+  margin: 44px 0;
+  background: none;
+}
+
 .product-card-link {
   text-decoration: none;
   font-weight: 700;
@@ -670,11 +683,6 @@ body {
   display: flex;
 }
 
-.button-secondary {
-  padding: 18px 39px;
-  margin: 44px 40px;
-}
-
 .pagination-menu {
   display: flex;
   justify-content: space-between;
@@ -722,4 +730,11 @@ body {
 
 .pagination-item:first-of-type {
   opacity: 0.6;
+}
+
+.product-list-container {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  grid-column-gap: 40px;
+  grid-row-gap: 44px;
 }
