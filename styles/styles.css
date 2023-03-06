@@ -64,24 +64,6 @@ body {
   font-weight: 800;
 }
 
-.search-button {
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: normal;
-  width: 160px;
-  height: 40px;
-  margin-left: 0;
-  text-align: center;
-  color: #000000;
-  text-transform: none;
-  border: 2px solid #000000;
-  border-left: 0;
-  border-radius: 0 50px 50px 0;
-}
-
 .container {
   display: flex;
   width: 1160px;
@@ -116,7 +98,41 @@ body {
 }
 
 .search-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 517px;
+  box-sizing: border-box;
+}
+
+.search-input {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  width: 359px;
+  height: 40px;
+  padding: 0 0 0 16px;
+  gap: 16px;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+}
+
+.search-button {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: normal;
+  width: 160px;
+  height: 40px;
+  margin-left: 0;
+  text-align: center;
+  color: #000000;
+  text-transform: none;
+  border: 2px solid #000000;
+  border-left: 0;
+  border-radius: 0 50px 50px 0;
 }
 
 .user-login {
@@ -132,19 +148,6 @@ body {
 
 .user-link-container .user-link:not(:last-child) {
   margin-right: 36px;
-}
-
-.search-input {
-  font-family: "Rubik", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
-  width: 359px;
-  height: 40px;
-  padding: 0 0 0 16px;
-  gap: 16px;
-  border: 2px solid #000000;
-  border-radius: 50px 0 0 50px;
 }
 
 .user-link {
@@ -212,8 +215,33 @@ body {
   margin-bottom: 50px;
 }
 
-.table-info {
-  margin: 50px 0 0 0;
+.table-info-1 {
+  display: grid;
+  grid-template-columns: 141px auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 12px;
+  margin-top: 50px;
+}
+
+.table-info-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 12px;
+  margin-top: 50px;
+}
+
+.table-info-3 {
+  display: grid;
+  grid-template-columns: 100px 80px 128px;
+  grid-column-gap: 40px;
+  grid-row-gap: 12px;
+  margin-top: 50px;
+}
+
+.table-description {
+  grid-row: 1 / 2;
+  margin: 0;
 }
 
 .main-title {
@@ -359,11 +387,30 @@ body {
   margin: 47px 0 48px 0;
 }
 
+.about-us-list {
+  padding-left: 19px;
+}
+
 .about-us-item {
   font-family: "Rubik", sans-serif;
-  line-height: 20px;
-  color: #000000;
+  font-style: normal;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding-left: 26px;
+  margin-bottom: 19px;
+}
+
+.about-us-item::marker {
+  color: #FFC700;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us button {
+  margin-top: 30px;
 }
 
 .contacts-subtitle {
@@ -379,6 +426,11 @@ body {
 .contacts-phone {
   text-decoration-line: underline;
   color: #444444;
+}
+
+.contacts-schedule {
+  list-style-type: none;
+  padding: 0;
 }
 
 .newsletter {
@@ -556,6 +608,19 @@ body {
   padding: 70px 40px 70px;
 }
 
+.product-list button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 39px;
+  width: 760px;
+  height: 55px;
+  border: 3px solid #E5E5E5;
+  margin: 44px 0;
+  background: none;
+}
+
 .product-card-link {
   text-decoration: none;
   font-weight: 700;
@@ -618,11 +683,6 @@ body {
   display: flex;
 }
 
-.button-secondary {
-  padding: 18px 39px;
-  margin: 44px 40px;
-}
-
 .pagination-menu {
   display: flex;
   justify-content: space-between;
@@ -644,6 +704,37 @@ body {
 }
 
 .pagination-link {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
+  color: #000000;
+}
+
+.pagination-number {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.pagination-item:not(:first-of-type) {
+  opacity: 0.3;
+}
+
+.pagination-item:first-of-type {
+  opacity: 0.6;
+}
+
+.product-list-container {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  grid-column-gap: 40px;
+  grid-row-gap: 44px;
 }
