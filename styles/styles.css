@@ -260,6 +260,7 @@ body {
 .user-login {
   margin-left: 26px;
   margin-right: 28px;
+  padding-left: 27px;
 }
 
 .user-link-container {
@@ -279,7 +280,6 @@ body {
   align-items: center;
   text-decoration: none;
   color: #000000;
-  padding-left: 27px;
 }
 
 .user-exit {
@@ -817,13 +817,29 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: #000000;
+}
+
+.breadcrumbs-item {
+  position: relative;
   margin-right: 36px;
+}
+
+.breadcrumbs-icon {
+  position: absolute;
+  top: 0;
+  right: -18px;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.2;
 }
 
 .catalog-products-title {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
   font-size: 16px;
   line-height: 19px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
 }
@@ -867,6 +883,12 @@ body {
   background: none;
 }
 
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .product-card-link {
   text-decoration: none;
   font-weight: 700;
@@ -882,14 +904,20 @@ body {
 }
 
 .catalog-products {
+  position: relative;
   display: flex;
   background-color: #F0F0F0;
+  z-index: -2;
 }
 
 .filter-container {
   width: 200px;
   margin-right: 60px;
   margin-left: 60px;
+}
+
+.btn-filter {
+  width: 220px;
 }
 
 .catalog-right-column {
@@ -923,6 +951,11 @@ body {
 .sorting-menu-button {
   width: 30px;
   height: 30px;
+  border: none;
+}
+
+.sorting-icon {
+  opacity: 0.2;
 }
 
 .sorting-button-container {
