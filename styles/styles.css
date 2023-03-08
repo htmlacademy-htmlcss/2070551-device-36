@@ -51,17 +51,75 @@ body {
 }
 
 .button {
+  position: relative;
   min-width: 120px;
   border: none;
+  background: none;
   text-transform: uppercase;
-  background: #FFE17F;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.2em;
-  font-weight: 800;
+  color: #000000;
+  height: 40px;
+}
+
+.button-primary::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  width: auto;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
+}
+
+.advantages-button {
+  width: 160px;
+}
+
+.advantages-button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  width: auto;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
+}
+
+.advantages-button-current {
+  color: #FFE17F;
+}
+
+.advantages-button-current::before {
+  background-color: #000000;
+  content: "";
+  width: 280px;
+  height: 40px;
+}
+
+.btn-slider {
+  width: 220px;
+}
+
+.about-us-btn {
+  width: 270px;
+}
+
+.contacts-btn {
+  width: 259px;
 }
 
 .container {
@@ -71,15 +129,37 @@ body {
 }
 
 .page-header {
+  position: relative;
   color: #000000;
 }
 
+.page-header-link {
+  position: relative;
+  top: -20px;
+}
+
 .page-header .container {
+  position: relative;
   background: #FFE17F;
   display: flex;
   flex-direction: column;
   padding: 0;
   width: 1040px;
+  height: 300px;
+  top: 40px;
+}
+
+.page-header .container::after {
+  content: "01";
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #FFFFFF;
+  position: absolute;
+  right: 49px;
+  bottom: 14px;
 }
 
 .user-link-row {
@@ -91,6 +171,32 @@ body {
 .navigation-row {
   display: flex;
   justify-content: space-between;
+}
+
+.navigation-catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-catalog-image {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  opacity: 0.3;
+  margin-left: 7px;
+}
+
+.header-catalog-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .search-form-container {
@@ -106,15 +212,31 @@ body {
 
 .search-input {
   font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   width: 359px;
   height: 40px;
-  padding: 0 0 0 16px;
-  gap: 16px;
+  padding: 0 0 0 48px;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
+  background-color: #FFE17F;
+}
+
+.search-input::placeholder {
+  opacity: 0.3;
+}
+
+.search {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 12px;
+  left: 16px;
 }
 
 .search-button {
@@ -136,7 +258,7 @@ body {
 }
 
 .user-login {
-  margin-left: 54px;
+  margin-left: 26px;
   margin-right: 28px;
 }
 
@@ -151,11 +273,13 @@ body {
 }
 
 .user-link {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   text-decoration: none;
   color: #000000;
+  padding-left: 27px;
 }
 
 .user-exit {
@@ -169,6 +293,8 @@ body {
 .navigation {
   display: flex;
   margin-left: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-link {
@@ -281,6 +407,7 @@ body {
 }
 
 .tab-description-container {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -298,39 +425,70 @@ body {
   justify-content: center;
 }
 
+.tab-description-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  border-left: 7px solid #000000;
+}
+
 .tab-menu button:not(:last-child) {
   margin-bottom: 35px;
 }
 
 .tab-description {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
   width: 694px;
   margin: 73px 63px;
 }
 
-.advantages-button {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  color: #000000;
-  text-transform: uppercase;
-  min-width: 120px;
-  border: none;
-  background: #FFE17F;
-  font-style: normal;
-  font-size: 18px;
-  text-align: start;
-  letter-spacing: 0.2em;
+.second {
+  width: 729px;
 }
 
-.advantages-button-current {
-  color: #FFE17F;
-  width: 280px;
-  background: #000000;
+.credit {
+  width: 694px;
+}
+
+.text-container-delievery {
+  width: 448px;
+}
+
+.text-container-guarantee {
+  width: 479px;
+}
+
+.text-container-credit {
+  width: 475px;
+}
+
+.advantages-icon-1 {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  bottom: 5px;
+  left: auto;
+}
+
+.advantages-icon-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
 }
 
 .advantages {
+  position: relative;
   width: 100%;
   background: #F0F0F0;
+  z-index: -2;
 }
 
 .unique-advantage-text {
@@ -345,23 +503,61 @@ body {
 }
 
 .unique-advantage .container {
-  justify-content: center;
   margin-top: 70px;
 }
 
+.unique-advantage-left {
+  position: relative;
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+}
+
+.unique-advantage-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
+.unique-advantage-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 100px;
+  background-color: #F0F0F0;
+}
+
+.unique-advantage-info {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
+}
+
 .unique-advantage-button {
+  display: grid;
+  grid-template-columns: 125px 1fr 125px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
-  text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   width: 1160px;
   height: 100px;
   background: #F0F0F0;
   border: none;
+  align-items: center;
+  justify-items: center;
+  padding: 0;
 }
 
 .company-info .company-info-container {
@@ -474,6 +670,20 @@ body {
   display: flex;
 }
 
+.newsletter-remark {
+  position: relative;
+  padding-left: 32px;
+}
+
+.checkmark-icon {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+}
+
 .email-input {
   font-family: 'Rubik', sans-serif;
   font-style: normal;
@@ -508,8 +718,20 @@ body {
 }
 
 .footer-contacts {
+  position: relative;
   width: 240px;
   margin: 62px 119px 77px 0;
+}
+
+.footer-contacts::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  border-bottom: 7px solid #FFC700;
 }
 
 .footer-contacts-address {
@@ -517,6 +739,10 @@ body {
 }
 
 .footer-nav-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin: 137px 0 61px 0;
 }
 
@@ -537,16 +763,31 @@ body {
 
 .footer-social {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: 15px;
-  margin-bottom: 15px;
 }
 
-.footer-social:nth-child(3n) {
-  margin-right: 0;
+.socials {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.socials:not(:nth-of-type(3)) {
+  margin-right: 15px;
+}
+
+.socials-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .social-button {
+  display: inline-block;
   width: 40px;
   height: 40px;
 }
@@ -742,4 +983,58 @@ body {
   grid-template-columns: 360px 360px;
   grid-column-gap: 40px;
   grid-row-gap: 44px;
+}
+
+.user-link-icon {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  fill: #000000;
+}
+
+.user-compare {
+  padding-left: 22px;
+}
+
+.user-basket {
+  padding-left: 25px;
+}
+
+.user-basket::before {
+  position: absolute;
+  display: flex;
+  content: "2";
+  width: 21px;
+  height: 21px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  left: -18px;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.product-icon-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background: #FFE17F;
+}
+
+.product-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #363636;
 }
