@@ -1113,3 +1113,27 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+
+
+.page-footer-link {
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  width: 145px;
+  height: 36px;
+}
+
+.page-header-link:hover,
+.page-footer-link:hover {
+  opacity: 0.6;
+}
+
+.page-header-link:active,
+.page-footer-link:active {
+  opacity: 0.3;
+}
+
+.page-header-link:focus,
+.page-footer-link:focus {
+  border: 2px solid #AF4FFF;
+}
