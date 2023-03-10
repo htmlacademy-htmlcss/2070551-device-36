@@ -945,6 +945,25 @@ border: 2px solid #AF4FFF;
   height: 40px;
 }
 
+.social-button:hover {
+  background-color: #FFC700;
+  border-radius: 50%;
+}
+
+.social-button:active {
+  background-color: #FFC700;
+  border-radius: 50%;
+}
+
+.social-button:active svg {
+  opacity: 0.3;
+}
+
+.social-button:focus {
+  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: none;
+}
+
 .footer-navigation .navigation-link {
   color: #FFFFFF;
 }
@@ -958,11 +977,37 @@ border: 2px solid #AF4FFF;
   margin-left: auto;
 }
 
+.htmlacademy-link:hover svg path{
+  fill: rgb(255, 255, 255);
+}
+
+.htmlacademy-link:active svg path{
+  fill: rgb(255, 255, 255);
+  opacity: 0.3;
+}
+
+.htmlacademy-link:focus {
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
 .footer-contacts-phone {
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: underline;
   color: #FFFFFF;
+}
+
+.footer-contacts-phone:hover {
+  color: #FFC700;
+}
+
+.footer-contacts-phone:active {
+  color: #FFC700;
+  opacity: 0.3;
+}
+
+.footer-contacts-phone:focus {
+  box-shadow: 0 0 0 2px #AF4FFF;
 }
 
 .breadcrumbs-link {
