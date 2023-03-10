@@ -244,7 +244,8 @@ border: 2px solid #AF4FFF;
 }
 
 .search-input:focus {
-  outline: 2px solid #AF4FFF;
+  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: none;
 }
 
 .search-input:disabled {
@@ -299,6 +300,7 @@ border: 2px solid #AF4FFF;
 
 .search-button:focus {
   box-shadow: 0 0 0 2px #AF4FFF;
+  outline: none;
 }
 
 .search-button:disabled {
@@ -383,6 +385,35 @@ border: 2px solid #AF4FFF;
 
 .navigation .navigation-link:not(:last-child) {
   margin-right: 45px;
+}
+
+.footer-navigation-link:not(:last-child) {
+  margin-right: 45px;
+}
+
+.footer-navigation-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.footer-navigation-link:hover {
+  color: #FFC700;
+  text-decoration: underline;
+}
+
+.footer-navigation-link:active {
+  color: #FFC700;
+  text-decoration: underline;
+  opacity: 0.3;
+}
+
+.footer-navigation-link:focus {
+  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: none;
 }
 
 .main-container {
@@ -962,10 +993,6 @@ border: 2px solid #AF4FFF;
 .social-button:focus {
   box-shadow: 0 0 0 2px #AF4FFF;
   outline: none;
-}
-
-.footer-navigation .navigation-link {
-  color: #FFFFFF;
 }
 
 .footer-phone {
