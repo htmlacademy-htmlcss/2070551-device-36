@@ -102,6 +102,10 @@ border: 2px solid #AF4FFF;
   z-index: -1;
 }
 
+.button-primary {
+  z-index: 1;
+}
+
 .advantages-button {
   width: 160px;
   z-index: 1;
@@ -370,6 +374,11 @@ border: 2px solid #AF4FFF;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+
+/* .navigation-link-active {
+  content: "Активный";
+  text-decoration: underline;
+} */
 
 .navigation-link:hover {
   opacity: 0.6;
@@ -917,7 +926,9 @@ border: 2px solid #AF4FFF;
 }
 
 .footer-contacts-address {
-  margin-top: 35px;
+  display: flex;
+  margin-top: 30px;
+  font-style: normal;
 }
 
 .footer-nav-socials {
@@ -996,6 +1007,7 @@ border: 2px solid #AF4FFF;
 }
 
 .footer-phone {
+  display: flex;
   font-style: normal;
   margin-bottom: 63px;
 }
@@ -1147,7 +1159,67 @@ border: 2px solid #AF4FFF;
 
 .product-card-link {
   text-decoration: none;
-  max-width: 226px;
+  width: 360px;
+  position: relative;
+}
+
+.product-card-price {
+  color: #000000;
+}
+
+.product-card-btn {
+  width: 220px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 180px auto;
+}
+
+.product-card-btn::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  width: auto;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
+}
+
+.product-card-link:hover .product-card-btn {
+  z-index: 2;
+  opacity: 1;
+}
+
+.product-card-link:hover {
+  opacity: 0.6;
+  z-index: 1;
+ }
+
+.product-card-link:active {
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.product-card-link:active .product-card-btn{
+  z-index: 2;
+  opacity: 1;
+  background-color: #FFC700;
+}
+
+.product-card-link:focus {
+  box-shadow: 0 0 0 2px #AF4FFF;
+}
+
+.product-card-image {
+  position: relative;
+  z-index: 2;
 }
 
 .product-card-title {
@@ -1158,6 +1230,7 @@ border: 2px solid #AF4FFF;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+  max-width: 226px;
 }
 
 .product-card-price {
@@ -1369,7 +1442,6 @@ border: 2px solid #AF4FFF;
   justify-content: space-between;
   width: 100%;
 }
-
 
 .page-footer-link {
   display: inline-block;
