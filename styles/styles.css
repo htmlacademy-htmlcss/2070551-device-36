@@ -65,6 +65,7 @@ body {
   letter-spacing: 0.2em;
   color: #000000;
   height: 40px;
+  cursor: pointer;
 }
 
 .button-primary:hover {
@@ -376,8 +377,19 @@ border: 2px solid #AF4FFF;
 }
 
 /* .navigation-link-active {
-  content: "Активный";
-  text-decoration: underline;
+  border-bottom: 1px solid #000000;
+}
+
+.navigation-link-active:hover {
+  opacity: 0.6;
+}
+
+.navigation-link-active:active {
+  opacity: 0.3;
+}
+
+.navigation-link-active:focus {
+  box-shadow: 0 0 0 2px #AF4FFF;
 } */
 
 .navigation-link:hover {
@@ -411,12 +423,12 @@ border: 2px solid #AF4FFF;
 
 .footer-navigation-link:hover {
   color: #FFC700;
-  text-decoration: underline;
+  border-bottom: 2px solid #FFC700;
 }
 
 .footer-navigation-link:active {
   color: #FFC700;
-  text-decoration: underline;
+  border-bottom: solid #FFC700;
   opacity: 0.3;
 }
 
@@ -1155,12 +1167,12 @@ border: 2px solid #AF4FFF;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
 }
 
 .product-card-link {
   text-decoration: none;
   width: 360px;
-  position: relative;
 }
 
 .product-card-price {
@@ -1172,10 +1184,10 @@ border: 2px solid #AF4FFF;
   height: 40px;
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  left: 70px;
   margin: 180px auto;
+  display: none;
+  z-index: 2;
 }
 
 .product-card-btn::before {
@@ -1192,24 +1204,21 @@ border: 2px solid #AF4FFF;
   z-index: -1;
 }
 
-.product-card-link:hover .product-card-btn {
-  z-index: 2;
-  opacity: 1;
+.product-card:hover .product-card-btn {
+  display: block;
 }
 
-.product-card-link:hover {
+.product-card:hover .product-card-link {
   opacity: 0.6;
   z-index: 1;
  }
 
-.product-card-link:active {
+.product-card:active {
   opacity: 0.6;
   z-index: 1;
 }
 
-.product-card-link:active .product-card-btn{
-  z-index: 2;
-  opacity: 1;
+.product-card:active .product-card-btn{
   background-color: #FFC700;
 }
 
