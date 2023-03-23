@@ -68,27 +68,6 @@ body {
   cursor: pointer;
 }
 
-.button-primary:hover {
-  background-color: #FFE17F;
-}
-
-.button-primary:active {
-  background-color: #FFCC33;
-}
-
-.button-primary:focus {
-  box-shadow: inset 0 0 0 2px #AF4FFF;
-  outline: none;
-}
-
-/* .button-primary:focus {
-border: 2px solid #AF4FFF;
-} */
-
-.button-primary:disabled {
-  opacity: 0.3;
-}
-
 .button-primary::before {
   position: absolute;
   top: 0;
@@ -103,13 +82,34 @@ border: 2px solid #AF4FFF;
   z-index: -1;
 }
 
-.button-primary {
-  z-index: 1;
-}
-
 .advantages-button {
   width: 160px;
   z-index: 1;
+}
+
+.button-primary:hover {
+  background-color: #FFE17F;
+}
+
+.button-primary:active {
+  background-color: #FFCC33;
+}
+
+.button-primary:active .button-primary::before {
+  background-color: #FFCC33;
+}
+
+.button-primary:focus {
+  box-shadow: inset 0 0 0 2px #AF4FFF;
+  outline: none;
+}
+
+/* .button-primary:focus {
+border: 2px solid #AF4FFF;
+} */
+
+.button-primary:disabled {
+  opacity: 0.3;
 }
 
 .advantages-button::before {
@@ -376,8 +376,8 @@ border: 2px solid #AF4FFF;
   letter-spacing: 0.2em;
 }
 
-/* .navigation-link-active {
-  border-bottom: 1px solid #000000;
+.navigation-link-active {
+  border-bottom: 2px solid #000000;
 }
 
 .navigation-link-active:hover {
@@ -390,7 +390,7 @@ border: 2px solid #AF4FFF;
 
 .navigation-link-active:focus {
   box-shadow: 0 0 0 2px #AF4FFF;
-} */
+}
 
 .navigation-link:hover {
   opacity: 0.6;
@@ -419,16 +419,29 @@ border: 2px solid #AF4FFF;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  position: relative;
+}
+
+.footer-navigation-link::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #FFC700;
+  width: 100%;
+  top: 25px;
+  left: 0;
+  display: none;
 }
 
 .footer-navigation-link:hover {
   color: #FFC700;
-  border-bottom: 2px solid #FFC700;
+}
+
+.footer-navigation-link:hover::after {
+  display: block;
 }
 
 .footer-navigation-link:active {
   color: #FFC700;
-  border-bottom: solid #FFC700;
   opacity: 0.3;
 }
 
@@ -1210,16 +1223,15 @@ border: 2px solid #AF4FFF;
 
 .product-card:hover .product-card-link {
   opacity: 0.6;
-  z-index: 1;
  }
 
-.product-card:active {
-  opacity: 0.6;
-  z-index: 1;
+ .product-card:active .product-card-btn::before {
+  display: block;
+  background-color: #FFC700;
 }
 
-.product-card:active .product-card-btn{
-  background-color: #FFC700;
+.product-card:active .product-card-link {
+  opacity: 0.6;
 }
 
 .product-card-link:focus {
@@ -1262,6 +1274,7 @@ border: 2px solid #AF4FFF;
 
 .btn-filter {
   width: 220px;
+  z-index: 1;
 }
 
 .catalog-right-column {
