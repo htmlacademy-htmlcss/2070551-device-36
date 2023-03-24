@@ -99,38 +99,65 @@
             <div class="filter-container">
               <h2 class="catalog-products-title">Фильтр:</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Стоимость</legend>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 119px;">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-filter-label">
+                        от <input class="range-input" type="number" value="0" name="min-price">
+                      </label>
+                      <label class="catalog-filter-label">
+                        до <input class="range-input" type="number" value="5000" name="max-price">
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Цвет</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="property">
-                        <input class="property-input" type="checkbox" name="Черный" checked>
-                        Черный
+                        <input class="visually-hidden property-input" type="checkbox" name="black" checked>
+                        <span class="property-mark"></span>
+                        <span class="property-label">Черный</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="property">
-                        <input class="property-input" type="checkbox" name="Белый" checked>
-                        Белый
+                        <input class="visually-hidden property-input" type="checkbox" name="white" checked>
+                        <span class="property-mark"></span>
+                        <span class="property-label">Белый</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="property">
-                        <input class="property-input" type="checkbox" name="Синий">
-                        Синий
+                        <input class="visually-hidden property-input" type="checkbox" name="blue">
+                        <span class="property-mark"></span>
+                        <span class="property-label">Синий</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="property">
-                        <input class="property-input" type="checkbox" name="Красный">
-                        Красный
+                        <input class="visually-hidden property-input" type="checkbox" name="red">
+                        <span class="property-mark"></span>
+                        <span class="property-label">Красный</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="property">
-                        <input class="property-input" type="checkbox" name="Розовый">
-                        Розовый
+                        <input class="visually-hidden property-input" type="checkbox" name="purple">
+                        <span class="property-mark"></span>
+                        <span class="property-label">Розовый</span>
                       </label>
                     </li>
                   </ul>
@@ -141,16 +168,17 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="property">
-                        <input class="property-input" type="radio" name="product-group" value="yes" checked>
-
-                        Есть
+                        <input class="visually-hidden property-input" type="radio" name="product-group" value="yes"
+                          checked>
+                        <span class="property-mark"></span>
+                        <span class="property-label">Есть</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="property">
-                        <input class="property-input" type="radio" name="product-group" value="no">
-
-                        Нет
+                        <input class="visually-hidden property-input" type="radio" name="product-group" value="no">
+                        <span class="property-mark"></span>
+                        <span class="property-label">Нет</span>
                       </label>
                     </li>
                   </ul>
