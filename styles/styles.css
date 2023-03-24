@@ -457,6 +457,16 @@ border: 2px solid #AF4FFF;
 .slide {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.slider-controls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  width: 560px;
+  transform: translateY(-50%);
 }
 
 .slider {
@@ -492,6 +502,7 @@ border: 2px solid #AF4FFF;
 }
 
 .slider-image {
+  display: block;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -507,6 +518,65 @@ border: 2px solid #AF4FFF;
 
 .slider-text {
   margin-bottom: 50px;
+}
+
+.slider-button {
+  width: 30px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/slider-arrow-left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.slider-next {
+  transform: rotate(180deg);
+}
+
+.slider-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider-pagination-item:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #000000;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-pagination-button:hover {
+  opacity: 0.6;
+}
+
+.slider-pagination-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.slider-pagination-button-current {
+  background-color: #000000;
 }
 
 .table-info {
