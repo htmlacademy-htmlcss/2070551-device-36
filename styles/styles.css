@@ -1985,6 +1985,7 @@ border: 2px solid #AF4FFF;
   width: 26px;
   height: 26px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal-title-row {
