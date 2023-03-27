@@ -374,10 +374,17 @@ border: 2px solid #AF4FFF;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  position: relative;
 }
 
-.navigation-link-active {
+.navigation-link-active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: -1px;
+  bottom: -4px;
   border-bottom: 2px solid #000000;
+
 }
 
 .navigation-link-active:hover {
@@ -1220,6 +1227,7 @@ border: 2px solid #AF4FFF;
   height: 2px;
   background-color: #DCDCDC;
   margin-bottom: 11px;
+  z-index: -1;
 }
 
 .range-bar {
@@ -1236,20 +1244,24 @@ border: 2px solid #AF4FFF;
   border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 1;
 }
 
 .range-toggle:hover {
   opacity: 0.5;
 }
 
-.range-toggle:active,
+.range-toggle:active {
+  background-color: #000000;
+}
+
 .range-toggle:focus {
   outline: 2px solid #AF4FFF;
 }
 
 .toggle-min {
   top: -8px;
-  left: 0;
+  left: -18px;
 }
 
 .toggle-max {
@@ -1291,6 +1303,7 @@ border: 2px solid #AF4FFF;
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .property-mark {
