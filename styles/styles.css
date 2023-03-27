@@ -1227,7 +1227,6 @@ border: 2px solid #AF4FFF;
   height: 2px;
   background-color: #DCDCDC;
   margin-bottom: 11px;
-  z-index: -1;
 }
 
 .range-bar {
@@ -1797,10 +1796,30 @@ border: 2px solid #AF4FFF;
 
 .popover-element {
   display: grid;
-  grid-template-columns: 40px auto auto;
+  grid-template-columns: auto auto;
   column-gap: 23px;
   align-items: flex-start;
   padding: 20px;
+}
+
+.popover-element-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+}
+
+.popover-element-text:hover {
+  opacity: 0.6;
+}
+
+.popover-element-text:active {
+  opacity: 0.3;
+}
+
+.popover-element-text:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .popover-element + .popover-element {
@@ -1815,6 +1834,7 @@ border: 2px solid #AF4FFF;
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  margin-left: 23px;
 }
 
 .popover-delete-btn {
@@ -1827,6 +1847,18 @@ border: 2px solid #AF4FFF;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.popover-delete-btn:hover {
+  opacity: 0.6;
+}
+
+.popover-delete-btn:active {
+  opacity: 0.3;
+}
+
+.popover-delete-btn:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .popover-summary {
@@ -1843,4 +1875,21 @@ border: 2px solid #AF4FFF;
   color: #000000;
   border: none;
   margin: 20px;
+}
+
+.popover-button:hover {
+  background-color: #FFE17F;
+}
+
+.popover-button:active {
+  background-color: #FFE17F;
+  opacity: 0.3;
+}
+
+.popover-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.popover-button:disabled {
+  opacity: 0.3;
 }
