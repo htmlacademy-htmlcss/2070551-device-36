@@ -1964,6 +1964,10 @@ border: 2px solid #AF4FFF;
   z-index: 2;
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
