@@ -1803,6 +1803,11 @@ border: 2px solid #AF4FFF;
   padding: 20px;
 }
 
+.popover-element + .popover-element {
+  border-top: 1px solid;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
 .popover-element-title {
   font-family: 'Rubik';
   font-style: normal;
