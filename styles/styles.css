@@ -1654,6 +1654,7 @@ border: 2px solid #AF4FFF;
 
 .user-basket {
   padding-left: 25px;
+  position: relative;
 }
 
 .user-basket::before {
@@ -1759,4 +1760,82 @@ border: 2px solid #AF4FFF;
 .pagination-prev:disabled,
 .pagination-next:disabled {
   opacity: 0.3;
+}
+
+.popover {
+  position: absolute;
+  top: 120px;
+  right: 16px;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 320px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #000000;
+  min-height: 173px;
+  display: none;
+}
+
+.popover-open {
+  display: block;
+}
+
+.popover::before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  top: -3px;
+  left: 160px;
+  transform: rotate(45deg);
+  background-color: #000000;
+}
+
+.popover-element {
+  display: grid;
+  grid-template-columns: 40px auto auto;
+  column-gap: 23px;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.popover-element-title {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.popover-delete-btn {
+  width: 10px;
+  height: 10px;
+  justify-self: flex-end;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/popover/delete-btn.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.popover-summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1A1A1A;
+}
+
+.popover-button {
+  width: 280px;
+  height: 50px;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  margin: 20px;
 }
