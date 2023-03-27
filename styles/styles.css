@@ -1909,7 +1909,7 @@ border: 2px solid #AF4FFF;
   line-height: 18px;
   box-sizing: border-box;
   background: #FFE17F;
-  /* display: none; */
+  display: none;
 }
 
 .nav-popover-open {
