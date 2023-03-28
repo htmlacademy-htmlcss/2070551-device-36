@@ -104,10 +104,6 @@ body {
   outline: none;
 }
 
-/* .button-primary:focus {
-border: 2px solid #AF4FFF;
-} */
-
 .button-primary:disabled {
   opacity: 0.3;
 }
@@ -465,7 +461,6 @@ border: 2px solid #AF4FFF;
 .slide {
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .slider-controls {
