@@ -1992,6 +1992,18 @@ border: 2px solid #AF4FFF;
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-close-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .modal-title-row {
   display: flex;
   justify-content: space-between;
@@ -2049,6 +2061,13 @@ border: 2px solid #AF4FFF;
 
 .quantity-field {
   width: 40px;
+  text-align: center;
+}
+
+.quantity-field::-webkit-outer-spin-button,
+.quantity-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .quantity-btn {
@@ -2125,21 +2144,62 @@ border: 2px solid #AF4FFF;
   bottom: 24px;
 }
 
-.quantity-label {
+.quantity-info {
   position: relative;
+  display: flex;
+  align-items: baseline;
 }
 
-.quantity-label::after {
-  position: absolute;
+.quantity-label {
+  position: relative;
+  padding-right: 10px;
+}
+
+.info-icon {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  content: "i";
-  color: #000000;
   width: 26px;
   height: 26px;
-  background: #FFE17F;
+  background-color: #FFE17F;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.popover-modal-info {
+  position: absolute;
+  width: auto;
+  background: #000000;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+  top: 35px;
+  z-index: 1;
+  display: none;
+}
+
+.info-icon:hover + .popover-modal-info {
+  display: block;
+}
+
+.popover-modal-info::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+  left: 135px;
   top: -3px;
-  right: 50px;
+}
+
+.popover-modal-content {
+  padding: 19px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.popover-modal-text {
+  margin: 0;
 }

@@ -541,14 +541,25 @@
               placeholder="В свободной форме">
           </div>
           <div class="field-group">
-            <label class="auth-name-label quantity-label" for="auth-quantity">Количество:</label>
+            <div class="quantity-info">
+              <label class="auth-name-label quantity-label" for="auth-quantity">Количество:</label>
+              <span class="info-icon">i</span>
+              <div class="popover-modal-info">
+                <div class="popover-modal-content">
+                  <p class="popover-modal-text">Постараемся найти, сколько нужно. Привезём сколько получится по
+                    требованиям
+                    к провозу багажа.</p>
+                </div>
+              </div>
+            </div>
             <div class="quantity-block">
               <button class="quantity-btn quantity-btn-minus">
                 <svg class="modal-btn-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="2" fill="none" viewBox="0 0 16 2">
                   <path fill="#000" d="M16 0H0v2h16V0Z" />
                 </svg></button>
-              <input class="auth-form-field quantity-field" type="number" name="auth-quantity" id="auth-quantity">
+              <input class="auth-form-field quantity-field" type="number" name="auth-quantity" id="auth-quantity"
+                value="1">
               <button class="quantity-btn quantity-btn-plus">
                 <svg class="modal-btn-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="none" viewBox="0 0 16 16">
